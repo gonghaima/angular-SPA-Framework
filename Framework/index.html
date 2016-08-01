@@ -1,15 +1,23 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
-    <meta charset="utf-8" />
     <title></title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
 
     <script src="scripts/jquery-3.1.0.min.js"></script>
     <script src="scripts/angular.min.js"></script>
+
+    <script src="ext-modules/psMenu/psMenuModule.js"></script>
+    <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
+    <script src="app/appModule.js"></script>
+
+    <script src="ext-modules/psFramework/psFrameworkController.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
+
 </head>
-<body>
-    sdafsfd
+<body class="container-fluid">
+    <ps-framework></ps-framework>
 </body>
 </html>
