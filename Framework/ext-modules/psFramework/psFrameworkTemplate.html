@@ -1,13 +1,19 @@
 ﻿
 <div class="ps-title-bar">
-    <div class="ps-logo-area">
-        <img class="ps-icon" src="/images/kayak-icon-flat.png" />
-        <div class="ps-title-area">
-            <p class="ps-logo-title">Whitewater Adventures</p>
-            <p class="ps-logo-subtitle">Administrative App</p>
+    <div class="row">
+        <div class="ps-logo-area col-sm-6">
+            <img class="ps-icon" ng-src="{{iconFile}}" />
+            <div class="ps-title-area">
+                <p class="ps-logo-title">{{title}}</p>
+                <p class="ps-logo-subtitle">{{subtitle}}</p>
+            </div>
         </div>
-    </div>
-    <div class="ps-right-side-controls">
-
+        <div class="ps-right-side-controls col-sm-6">
+            <div>
+                <button class="btn btn-primary">Button 1</button>
+                <button class="btn btn-success">Button 2</button>
+                <button class="btn btn-warning">Button 3</button>
+            </div>
+        </div>
     </div>
 </div>

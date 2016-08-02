@@ -5,8 +5,13 @@
     border-bottom: 2px solid black;
 }
 
+.ps-logo-area{
+    text-align:center;
+}
+
 .ps-title-area {
     display: inline-block;
+    text-align:left;
 }
 
 .ps-icon {
@@ -29,7 +34,21 @@
     margin-top: -13px;
 }
 
+.ps-right-side-controls{
+    line-height:60px;
+}
 
+.ps-right-side-controls > div{
+    text-align:center;
+}
 
+@media screen and (min-width: 768px){
+    .ps-right-side-controls > div{
+        text-align:right;
+    }
+    .ps-logo-area{
+        text-align:left;
+    }
+}
 
 
