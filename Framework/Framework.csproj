@@ -81,7 +81,12 @@
     <Content Include="ext-modules\psFramework\psFrameworkDirective.js" />
     <Content Include="ext-modules\psFramework\psFrameworkModule.js" />
     <Content Include="ext-modules\psFramework\psFrameworkTemplate.html" />
+    <Content Include="ext-modules\psMenu\psMenuController.js" />
+    <Content Include="ext-modules\psMenu\psMenuDirective.js" />
+    <Content Include="ext-modules\psMenu\psMenuItemDirective.js" />
+    <Content Include="ext-modules\psMenu\psMenuItemTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenuModule.js" />
+    <Content Include="ext-modules\psMenu\psMenuTemplate.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\kayak-icon-flat.png" />
