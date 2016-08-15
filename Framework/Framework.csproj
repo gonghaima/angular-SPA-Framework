@@ -81,6 +81,7 @@
     <Content Include="ext-modules\psFramework\psFrameworkDirective.js" />
     <Content Include="ext-modules\psFramework\psFrameworkModule.js" />
     <Content Include="ext-modules\psFramework\psFrameworkTemplate.html" />
+    <Content Include="ext-modules\psMenu\psMenu.css" />
     <Content Include="ext-modules\psMenu\psMenuController.js" />
     <Content Include="ext-modules\psMenu\psMenuDirective.js" />
     <Content Include="ext-modules\psMenu\psMenuItemDirective.js" />
