@@ -91,3 +91,8 @@
     background-color:#333;
     border: 1px solid #999;
 }
+.ps-layout-button-horizontal {
+    position: absolute;
+    top:-6px;
+    right: 10px;
+}
