@@ -19,7 +19,6 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,8 +82,8 @@
     <Content Include="ext-modules\psFramework\psFrameworkTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenu.css" />
     <Content Include="ext-modules\psMenu\psMenuController.js" />
-    <Content Include="ext-modules\psMenu\psMenuGroupDirective.js" />
     <Content Include="ext-modules\psMenu\psMenuDirective.js" />
+    <Content Include="ext-modules\psMenu\psMenuGroupDirective.js" />
     <Content Include="ext-modules\psMenu\psMenuGroupTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenuItemDirective.js" />
     <Content Include="ext-modules\psMenu\psMenuItemTemplate.html" />

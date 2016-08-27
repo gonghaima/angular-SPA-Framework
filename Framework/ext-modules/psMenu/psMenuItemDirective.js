@@ -1,23 +1,25 @@
-﻿/// <reference path="F:\Study\spaWithAngular\Steven work files\Framework\Framework\Scripts/angular.min.js" />
-"use strict";
+﻿"use strict";
 
-angular.module("psMenu").directive('psMenuItem', function () {
+angular.module('psMenu').directive('psMenuItem', function () {
     return {
-        require:'^psMenu',
+        require: '^psMenu',
         scope: {
             label: '@',
             icon: '@',
-            route:'@'
+            route: '@'
         },
-        templateUrl: "ext-modules/psMenu/psMenuItemTemplate.html",
+        templateUrl: 'ext-modules/psMenu/psMenuItemTemplate.html',
         link: function (scope, el, attr, ctrl) {
+
+            scope.isActive = function () {
+                return el === ctrl.getActiveElement();
+            };
+
+            scope.isVertical = function () {
+                return ctrl.isVertical() || el.parents('.ps-subitem-section').length > 0;
+            }
+
             el.on('click', function (evt) {
-                scope.isActive = function () {
-                    return el === ctrl.getActiveElement();
-                }; 
-                scope.isVertical = function () {
-                    return ctrl.isVertical();
-                };
                 evt.stopPropagation();
                 evt.preventDefault();
                 scope.$apply(function () {

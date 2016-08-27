@@ -1,7 +1,6 @@
-﻿/// <reference path="F:\Study\spaWithAngular\Steven work files\Framework\Framework\Scripts/angular.min.js" />
-"use strict";
+﻿"use strict";
 
-angular.module("psMenu").directive('psMenuGroup', function () {
+angular.module('psMenu').directive('psMenuGroup', function () {
     return {
         require: '^psMenu',
         transclude: true,
@@ -9,17 +8,27 @@ angular.module("psMenu").directive('psMenuGroup', function () {
             label: '@',
             icon: '@'
         },
-        templateUrl: "ext-modules/psMenu/psMenuGroupTemplate.html",
-        link: function (scope, el, attr, ctrl) {
+        templateUrl: 'ext-modules/psMenu/psMenuGroupTemplate.html',
+        link: function (scope, el, attrs, ctrl) {
             scope.isOpen = false;
-            scope.colseMenu = function () {
+            scope.closeMenu = function () {
                 scope.isOpen = false;
             };
             scope.clicked = function () {
                 scope.isOpen = !scope.isOpen;
+
+                if (el.parents('.ps-subitem-section').length == 0)
+                    scope.setSubmenuPosition();
+
+                ctrl.setOpenMenuScope(scope);
             };
             scope.isVertical = function () {
-                return ctrl.isVertical();
+                return ctrl.isVertical() || el.parents('.ps-subitem-section').length > 0;
+            };
+
+            scope.setSubmenuPosition = function () {
+                var pos = el.offset();
+                $('.ps-subitem-section').css({ 'left': pos.left + 20, 'top': 36 });
             };
         }
     };

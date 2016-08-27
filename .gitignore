@@ -243,3 +243,11 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Framework/ext-modules/psFramework/psFrameworkTemplate.html.bak
+/Framework/ext-modules/psFramework/psFrameworkDirective.js.bak
+/Framework/ext-modules/psFramework/psFrameworkController.js.bak
+/Framework/ext-modules/psMenu/psMenuTemplate.html.bak
+/Framework/ext-modules/psMenu/psMenuItemTemplate.html.bak
+/Framework/ext-modules/psMenu/psMenuDirective.js.bak
+/Framework/ext-modules/psMenu/psMenuController.js.bak
+/Framework/index.html.bak
