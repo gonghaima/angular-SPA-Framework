@@ -1,4 +1,4 @@
-﻿<li class="ps-selectable-item" ng-click="clicked()">
+﻿<li class="ps-selectable-item" ng-class="{'ps-item-horizontal':!isVertical()}" ng-click="clicked()">
     <div class="ps-noselect">
         <i class="fa {{icon}} ps-menu-icon"></i>
         {{label}}

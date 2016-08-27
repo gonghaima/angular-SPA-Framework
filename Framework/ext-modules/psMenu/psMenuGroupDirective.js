@@ -18,6 +18,9 @@ angular.module("psMenu").directive('psMenuGroup', function () {
             scope.clicked = function () {
                 scope.isOpen = !scope.isOpen;
             };
+            scope.isVertical = function () {
+                return ctrl.isVertical();
+            };
         }
     };
 });
