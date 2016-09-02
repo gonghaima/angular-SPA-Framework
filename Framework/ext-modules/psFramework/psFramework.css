@@ -76,3 +76,14 @@
     color: #777;
 }
 
+.ps-view{
+    margin-left:200px;
+    padding:20px;
+    background-color:#ccc;
+    min-height:100vh;
+    overflow:auto;
+}
+
+.ps-view-full-width{
+    margin-left: 0;
+}
