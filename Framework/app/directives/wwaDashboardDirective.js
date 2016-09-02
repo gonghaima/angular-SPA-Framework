@@ -6,6 +6,7 @@ angular.module('app').directive('wwaDashboard', [function () {
         },
         template: '<ps-dashboard></ps-dashboard>',
         link: function (scope) {
+            scope.title = "My First Dashboard";
             scope.gridsterOpts = {
                 columns: 12,
                 margins: [20, 20],
