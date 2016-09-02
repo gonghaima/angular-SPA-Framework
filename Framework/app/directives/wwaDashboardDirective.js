@@ -16,12 +16,14 @@ angular.module('app').directive('wwaDashboard', [function () {
             };
             scope.widgets = [
                 {
+                    title:'first',
                     sizeX: 3,
                     sizeY: 3,
                     row: 0,
                     col: 0
                 },
                 {
+                    title: 'second',
                     sizeX: 2,
                     sizeY: 4,
                     row: 0,

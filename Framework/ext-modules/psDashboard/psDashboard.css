@@ -7,3 +7,29 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
     background:white;
 }
+
+
+.ps-widget-header {
+    position: relative;
+    color: white;
+    background-color: #444;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    min-height: 30px;
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.ps-widget-header-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ps-widget-header-buttons .btn {
+    margin: 4px;
+    margin-top: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
