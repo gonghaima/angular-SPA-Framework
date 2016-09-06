@@ -5,6 +5,7 @@
 /// <reference path="app/directives/wwadashboarddirective.js" />
 /// <reference path="app/directives/wwaguidesdirective.js" />
 /// <reference path="app/directives/wwalocationsdirective.js" />
+/// <reference path="app/services/dataservice.js" />
 /// <reference path="ext-modules/psdashboard/psdashboarddirective.js" />
 /// <reference path="ext-modules/psDashboard/psDashboardModule.js" />
 /// <reference path="ext-modules/psFramework/psFrameworkController.js" />
