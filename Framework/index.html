@@ -12,6 +12,11 @@
     <link href="ext-modules/psMenu/psMenu.css" rel="stylesheet" />
     <link href="ext-modules/psDashboard/psDashboard.css" rel="stylesheet" />
 
+    <!-- widget css -->
+    <link href="app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+    <link href="app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+    <link href="app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
+
     <script src="Scripts/jquery-2.1.3.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-animate.min.js"></script>
@@ -26,6 +31,7 @@
 
     <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
     <script src="ext-modules/psDashboard/psDashboardDirective.js"></script>
+    <script src="ext-modules/psDashboard/psWidgetBodyDirective.js"></script>
 
     <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
     <script src="ext-modules/psFramework/psFrameworkController.js"></script>
@@ -40,21 +46,31 @@
     <script src="app/directives/wwaGuidesDirective.js"></script>
     <script src="app/directives/wwaLocationsDirective.js"></script>
 
+    <!-- widget JavaScript files -->
+    <script src="app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+    <script src="app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
+    <script src="app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
+
 </head>
 <body class="container-fluid">
-    <ps-framework title="Whitewater Adventures2" 
-                  subtitle="Administrative Application" 
+
+    <ps-framework title="Whitewater Adventures"
+                  subtitle="Administrative Application"
                   icon-file="images/kayak-icon-flat.png">
+
         <ps-menu>
             <ps-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></ps-menu-item>
             <ps-menu-item label="Locations" icon="fa-location-arrow" route="locations"></ps-menu-item>
             <ps-menu-item label="Raft Guides" icon="fa-user" route="guides"></ps-menu-item>
             <ps-menu-group label="Equipment" icon="fa-gears">
-                <ps-menu-item label="Raft" icon="fa-unlink" route="rafts"></ps-menu-item>
+                <ps-menu-item label="Rafts" icon="fa-unlink" route="rafts"></ps-menu-item>
                 <ps-menu-item label="Paddles" icon="fa-magic" route="paddles"></ps-menu-item>
-                <ps-menu-item label="Live Vests" icon="fa-life-ring" route="vests"></ps-menu-item>
+                <ps-menu-item label="Life Vests" icon="fa-life-ring" route="vests"></ps-menu-item>
             </ps-menu-group>
         </ps-menu>
+
+
     </ps-framework>
+
 </body>
 </html>
