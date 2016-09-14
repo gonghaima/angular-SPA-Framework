@@ -12,7 +12,7 @@ angular.module('app').factory('dataService',
                 guides: 20,
                 rafts: 18,
                 vests: 200,
-                image: 'river1.png'
+                image: 'river.png'
             },
             {
                 id: 1001,
