@@ -37,7 +37,7 @@ angular.module('app').directive('wwaDashboard', [function () {
                     sizeX: 5,
                     sizeY: 3,
                     row: 0,
-                    col: 0,
+                    col: 5,
                     template: '<wwa-employee></wwa-employee>',
                     widgetSettings: {
                         id: 5001
