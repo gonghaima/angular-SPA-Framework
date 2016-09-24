@@ -22,6 +22,10 @@ angular.module('psDashboard').directive('psWidgetBody',
                     };
                     $uibModal.open(options);
                 };
+
+                scope.iconClicked = function () {
+
+                }
             }
         };
     }
