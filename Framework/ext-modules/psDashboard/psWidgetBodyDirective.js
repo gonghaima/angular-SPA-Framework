@@ -1,8 +1,8 @@
 ﻿"use strict";
 
 angular.module('psDashboard').directive('psWidgetBody',
-    ['$compile',
-    function ($compile) {
+    ['$compile', '$uibModal',
+    function ($compile, $uibModal) {
         return {
             templateUrl: 'ext-modules/psDashboard/psWidgetBodyTemplate.html',
             link: function (scope, element, attrs) {
@@ -12,6 +12,15 @@ angular.module('psDashboard').directive('psWidgetBody',
 
                 scope.close = function () {
                     scope.widgets.splice(scope.widgets.indexOf(scope.item),1);
+                };
+
+                scope.settings = function () {
+                    var options = {
+                        templateUrl: scope.item.widgetSettings.templateUrl,
+                        controller: scope.item.widgetSettings.controller,
+                        scope:scope
+                    };
+                    $uibModal.open(options);
                 };
             }
         };
