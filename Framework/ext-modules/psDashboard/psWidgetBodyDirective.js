@@ -9,6 +9,10 @@ angular.module('psDashboard').directive('psWidgetBody',
                 var newElement = angular.element(scope.item.template);
                 element.append(newElement);
                 $compile(newElement)(scope);
+
+                scope.close = function () {
+                    scope.widgets.splice(scope.widgets.indexOf(scope.item),1);
+                };
             }
         };
     }
