@@ -1,5 +1,6 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="app/appConfig.js" />
+/// <reference path="app/appcontroller.js" />
 /// <reference path="app/appModule.js" />
 /// <reference path="app/approuteconfig.js" />
 /// <reference path="app/dialogs/wwaselectemployeecontroller.js" />
