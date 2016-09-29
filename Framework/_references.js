@@ -31,4 +31,5 @@
 /// <reference path="scripts/angular-ui/ui-bootstrap-tpls.min.js" />
 /// <reference path="scripts/bootstrap.js" />
 /// <reference path="scripts/jquery-2.1.3.js" />
+/// <reference path="scripts/ngstorage.min.js" />
 /// <reference path="scripts/npm.js" />
