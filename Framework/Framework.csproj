@@ -86,6 +86,10 @@
     <Content Include="ext-modules\psDashboard\psDashboardTemplate.html" />
     <Content Include="ext-modules\psDashboard\psWidgetBodyDirective.js" />
     <Content Include="ext-modules\psDashboard\psWidgetBodyTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileTemplate.html" />
     <Content Include="images\employee-andy.png" />
     <Content Include="images\employee-april.png" />
     <Content Include="images\employee-don.png" />
