@@ -1,0 +1,338 @@
+
+ps-dashboard {
+    font-size: 44px;
+    margin: 0;
+    width: 100%;
+}
+
+.gridster .gridster-item {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    overflow: hidden;
+}
+
+.ps-widget-header {
+    position: relative;
+    color: white;
+    background-color: #444;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    min-height: 30px;
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.ps-widget-header-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ps-widget-header-buttons .btn {
+    margin: 4px;
+    margin-top: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.ps-widget-body {
+    position: relative;
+}
+
+.ps-dashboard-header {
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+    color: white;
+    background-color: #888 ;
+    margin: -20px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    padding: 8px;
+    padding-left: 20px;
+}
+
+.ps-dashboard-controls {
+    float: right;
+}
+
+.ps-widget-menu-area {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 22px;
+}
+
+.ps-widget-menu-area .dropdown-menu {
+    left: -20px;
+    padding-left: 15px;
+}
+
+.ps-widget-menu-area a {
+    color: white;
+}
+
+.ps-widget-menu-area i {
+    cursor: pointer;
+}
+
+.dropdown-backdrop {
+    position: static;
+}
+
+.ps-title-bar {
+    background-color: white;
+    padding: 0 20px;
+    border-bottom: 2px solid black;
+}
+
+
+.ps-title-area {
+    display: inline-block;
+}
+
+
+
+.ps-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    vertical-align: top;
+    border: 1px solid #999;
+}
+
+.ps-logo-title {
+    color: #111;
+    margin-top: 6px;
+    font-size: 22px;
+}
+
+.ps-logo-subtitle {
+    font-size: 13px;
+    margin-top: -13px;
+}
+
+@media screen and (max-width: 430px) {
+    .ps-icon {
+        display: none;
+    }
+    .ps-logo-title {
+        font-size: 18px;
+    }
+}
+
+.ps-right-side-controls {
+    line-height: 60px;
+}
+
+.ps-right-side-controls > div {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .ps-right-side-controls > div {
+        text-align: right;       
+    }
+    .ps-logo-area {
+        text-align: left;
+    }
+}
+
+.ps-collapsed-menu {
+    display: inline-block;
+    height: 100%;
+}
+
+.ps-nav-button {
+    height: 40px;
+    width: 60px;
+    margin-top: 10px;
+    border: 1px solid #888;
+    padding: 0;
+    font-size: 26px;
+    color: #777;
+}
+
+.ps-view {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #ccc;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.ps-view-full-width {
+    margin-left: 0;
+}
+
+
+.ps-user-profile {
+    background-color: #333;
+    color: white;
+    width: 200px;
+    min-height: 120px;
+    padding-top: 10px;
+}
+
+.ps-user-profile > div {
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+.ps-user-profile > div > p {
+    margin-bottom: 2px;
+}
+
+.ps-user-profile > div > button {
+    margin-top: 8px;
+}
+
+.ps-user-profile img {
+    float: left;
+    margin: 12px;
+    width: 80px;
+    height: 80px;
+}
+
+.ps-user-profile-small {
+    color: #333;
+    padding-top: 4px;
+}
+
+.ps-user-profile-small > span {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ps-user-profile-small img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+.ps-menu-area {
+    position: relative;
+    background-color: #333;
+    color: #ccc;
+    padding-left: 0;
+}
+
+.ps-menu-area-vertical {
+    float:left;
+    width: 200px;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.ps-menu-area-horizontal {
+    width: 100%;
+    height: 40px;
+}
+
+.ps-menu-area ul {
+    padding-left: 0;
+}
+
+.ps-menu-area .btn:hover {
+    color: #ccc;
+}
+
+.ps-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.ps-menu ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ps-menu li {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.ps-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.ps-selectable-item:hover {
+    background-color: #555;
+}
+
+.ps-menu-icon {
+    margin-right: 10px;
+}
+
+.ps-menu-active-indicator {
+    float: right;
+    color: #ddd;
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.ps-noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ps-group-indicator-left {
+    float: right;
+    color: #ddd;
+    margin-right: 2px;
+    margin-top: 15px;
+}
+
+.ps-subitem-section {
+    padding-left: 16px;
+}
+
+.ps-menu-layout-button {
+    margin: 12px;
+    padding: 2px 8px;
+    color: #bbb;
+    background-color: #333;
+    border: 1px solid #999;
+}
+
+.ps-layout-button-horizontal {
+    position: absolute;
+    top: -6px;
+    right: 10px;
+}
+
+.ps-item-horizontal {
+    display: inline-block;
+    width: 165px !important;
+    margin-left: 20px;
+    margin-top: 5px;
+    line-height: 1.5em !important;
+}
+
+.ps-popup-menu {
+    position: absolute;
+    z-index: 1000;
+    background-color: #333;
+    width: 200px;
+    padding-left: 0;
+}
+.ps-fade-in-animation {
+    -moz-transition: linear all 0.5s;
+    -o-transition: linear all 0.5s;
+    -webkit-transition: linear all 0.5s;
+    transition: linear all 0.5s;
+}
+.ps-fade-in-animation.ng-hide {
+    opacity: 0;
+}
